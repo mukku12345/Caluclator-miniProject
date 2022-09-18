@@ -1,65 +1,41 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Calculator+-x/% </title>
-  <link href="stylee.css" rel="stylesheet" type="text/css" />
-  <link href="util.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Calculator</title>
+  <link rel="icon" href="https://cdn.dribbble.com/users/9362974/screenshots/16583687/media/7af053b947d4183b14f007d96e3616aa.png?compress=1&resize=400x300&vertical=top">
+  <link href="style.css" rel="stylesheet">
+  
 </head>
-
 <body>
-  <h1 class="text-center">Calculator Using HTML CSS And JS</h1>
-  <div class="container flex flex-col items-center  bg-red mx-auto m-w-20" id="display" >
-    <div class="row">
-      <input class="input" type="text" placeholder="Easy Calculate"/>
+    <h1>Simple Calulator</h1>
+  <div class="calculator-grid">
+   
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
     </div>
-
-    <div class="row">
-      <button class="button sign">C</button>
-      <button class="button sign">%</button>
-      <button class="button sign">.</button>
-      <button class="button sign">/</button>
-      
-    </div>
-    
-    <div class="row">
-      <button class="button">7</button>
-      <button class="button">8</button>
-      <button class="button">9</button>
-      <button class="button sign">*</button>
-      
-    </div>
-      <div class="row">
-       <button class="button">4</button>
-       <button class="button">5</button>
-       <button class="button">6</button>
-       <button class="button sign">-</button>
-      
-    </div>
-      <div class="row">
-      <button class="button">1</button>
-      <button class="button">2</button>
-      <button class="button">3</button>
-      <button class="button sign">+</button>
-      
-    </div>
-    
-      <div class="row">
-      <button class="button">(</button>
-      <button class="button">0</button>
-      <button class="button">)</button>
-      <button class="button" id="equal">=</button>
-      
-    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
   </div>
-  <script src="script.js"></script>
-
-  <!--
-This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
--->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script src="script.js" defer></script>
 </body>
-
 </html>
